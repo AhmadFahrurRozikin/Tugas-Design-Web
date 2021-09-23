@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Form</title>
+        <style>
+            fieldset{
+                width: 600px; /* lebar */
+                border-color: black; /* warna garis tepi*/
+            }
+            
+        </style>
+    </head>
+    <body>
+        <form action="result.html" method="GET">
+            <fieldset>
+            <legend align="center">User Form</legend>
+            <div>
+                <label for="name">FIRST NAME </label>
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                <input type="text" name="name" id="name" placeholder="username" required>
+            </div>
+            <br>
+
+            <div>
+                <label>
+                PASSWORD
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;
+                <input type="password" name="password" required>
+                </label>
+            </div>
+            <br>
+
+            <div>
+                GENDER
+                    &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                    &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                    &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                    &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                    &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Laki-Laki</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Perempuan</label>
+            </div>
+            <br>
+
+            <div>
+                <label for="address">ADDRESS</label>
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                <textarea id="address" name="address"></textarea>
+            </div>
+            <br>
+
+            <div>
+                <label for="age">AGE</label>
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                <input type="number" name="age" id="age" min="1" max="200" step="1">
+            </div>
+            <br>
+            <div>
+                <label for="date">BIRTHDAY</label>
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;&NonBreakingSpace;
+                <input type="date" name="date" id="date" min="1945-01-01">
+            </div>
+            <br>
+
+            <div>
+                HOBBY
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;&NonBreakingSpace;
+                    <input type="checkbox" name="Hockey" id="Hockey">
+                    <label for="hockey">Hockey</label>
+                    <input type="checkbox" name="Football" id="Football">
+                    <label for="football">Footbal</label>
+                    <input type="checkbox" name="Cricket" id="Cricket">
+                    <label for="Cricket">Cricket</label>
+                    <input type="checkbox" name="Volley" id="Volley">
+                    <label for="Volley">Volleyball</label>
+            </div>
+            <br>
+
+            <div>
+                MARTIALSTATUS&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                    <input type="radio" name="married" id="married">
+                    <label for="married">Married</label>
+                    <input type="radio" name="unmarried" id="unmarried">
+                    <label for="unmarried">Unmarried</label>
+            </div>
+            <br>
+
+            <button align="center" type="reset">Reset</button>
+            <button align="center" type="submit">Submit</button>
+            </fieldset>
+        </form>
+        <!-- Side Links Only -->
+        <div class="side-links">
+            <a href="https://youtu.be/fNcJuPIZ2WE" target="_blank" class="side-link side-link-youtube">
+            <i class="fab fa-youtube-square side-link-icon"></i>
+            <span class="side-link-text">View Tutorial</span>
+            </a>
+            <a href="https://github.com/WebDevSimplified" target="_blank" class="side-link side-link-github side-link-icon">
+            <i class="fab fa-github-square"></i>
+            <span class="side-link-text">View GitHub</span>
+            </a>
+            <a href="https://twitter.com/DevSimplified" target="_blank" class="side-link side-link-twitter">
+            <i class="fab fa-twitter-square side-link-icon"></i>
+            <span class="side-link-text">View Twitter</span>
+            </a>
+        </div>
+    </body>
+</html>
